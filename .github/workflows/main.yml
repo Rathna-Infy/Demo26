@@ -1,9 +1,10 @@
-name: Rathna-Workflow
+name: Rathna Workflow
 on:
-   push:
-jobs:
-     Hello-Rathna:
- runs-on: ubuntu_latest
-steps:
-- name: Hello Rathna
-  run: echo "Hello Rathna"
+  push:
+       workflow_dispatch:
+jobs:  
+       Hello-Rathna:
+                  runs-on: ubuntu_latest
+ steps:
+      - name: Hello Rathna
+run: echo "Hello Rathna"
